@@ -9,6 +9,7 @@ body {
   background-color: #3399fe;
   letter-spacing: 1px;
   color: #fff;
+  font-size: 25px;
 }
 .container {
   display: flex;
@@ -19,18 +20,13 @@ h3 {
   padding: 15px 0 25px 15px;
 }
 
-.login {
+.left {
   background-color: #4da6ff;
   width: 600px;
   height: 750px;
   border-radius: 0 35px 35px 0;
 }
 
-.join {
-  width: 100%;
-  height: 750px;
-  border: 2px solid red;
-}
 h2 {
   font-weight: normal;
   font-size: 50px;
@@ -38,9 +34,15 @@ h2 {
 }
 button {
   background-color: #2675ca;
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  border-radius: 5px;
+  height: 45px;
+  margin-left: 15px;
 }
 
-.login-form > form > input {
+.login-form > input {
   background-color: #ffff9d;
 }
 
@@ -49,5 +51,96 @@ input {
   height: 35px;
   border-radius: 14px;
   border: 1px solid #3399fe;
-  margin-top: 25px;
+  margin: 15px;
+}
+label {
+  margin-left: 15px;
+}
+input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.login-form > button {
+  width: 120px;
+  margin-left: 15px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+
+.resend-form {
+  display: flex;
+  flex-direction: column;
+}
+.resend-form > button {
+  width: 250px;
+}
+.resend-form input {
+  padding-left: 15px;
+  font-size: 18px;
+}
+.right {
+  width: 100%;
+  height: 750px;
+}
+.join {
+  display: flex;
+  flex-direction: column;
+}
+.left-form,
+.right-form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+.container-join {
+  display: flex;
+  margin-top: 35px;
+}
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type="password"] {
+  width: 200px;
+}
+input[type="email"] {
+  width: 300px;
+}
+.radio input[type="text"] {
+  width: 95px;
+}
+.radio input[type="radio"] {
+  width: 25px;
+}
+.radio label[for="age"] {
+  display: block;
+  width: 100%;
+}
+.radio label[for="male"],
+.radio label[for="female"] {
+  padding-top: 20px;
+}
+.register {
+  display: flex;
+  justify-content: flex-end;
+  width: 900px;
+}
+.register p {
+  width: 450px;
+  font-size: 16px;
+  text-align: right;
+  text-indent: 240px;
+  margin-top: 7px;
+}
+.register a {
+  color: #fff;
+}
+
+.register > button {
+  width: 160px;
 }
